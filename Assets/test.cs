@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Advertisements;
+using UnityEngine.Analytics;
 
 public class test : MonoBehaviour {
 
@@ -17,6 +18,7 @@ public class test : MonoBehaviour {
 		if (Input.GetMouseButton (0)) {
 			if(Advertisement.IsReady()){
 				Advertisement.Show();
+				Analytics.CustomEvent("click",null);
 			}
 		}
 
