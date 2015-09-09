@@ -3,7 +3,8 @@ using System.Collections;
 
 public class test : MonoBehaviour {
 
-	// Use this for initialization
+	private GameObject cube;
+
 	void Start () {
 	
 	}
