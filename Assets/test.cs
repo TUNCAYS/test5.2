@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Advertisements;
 
 public class test : MonoBehaviour {
 
@@ -12,5 +13,12 @@ public class test : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.Rotate (Vector3.up * 1f);
+
+		if (Input.GetMouseButton (0)) {
+			if(Advertisement.IsReady()){
+				Advertisement.Show();
+			}
+		}
+
 	}
 }
